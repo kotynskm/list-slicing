@@ -228,27 +228,14 @@ def custom_equality(some_list, another_list):
         False
 
     """
-    # still working on this problem
-    some_list.sort()
-    another_list.sort()
-
-    # if some_list != another_list:
-    #     return False
-    # else:
-    #     return True
-    # for item in some_list:
-    #     if len(some_list) != len(another_list):
-    #         return False
-            
-    #     if item == another_list[0]:
-    #         return True
-    #     else:
-    #         return False
-    # for i in range(0,len(some_list)):
-    #     value = some_list[i]
-    #     value2 = another_list[i]
-    #     if value == value2:
-    #         return True
-    #     else:
-    #         return False
+    
+    if len(some_list) != len(another_list):
+        return False
+    
+    for index in range(0, len(some_list)):
+        if some_list[index] != another_list[index]:
+            return False
+    return True
+    
+   
 
